@@ -1,0 +1,421 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/src
+/public
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+#   <BrowserRouter>
+#  <NavBar/>
+#  <Routes>
+#  <Route  path='/' element={ <Login/>} />   
+#  <Route  path='/' element={ <SingUp/>} />   
+#  <Route path="/" element={<About/>} />
+#  <Route path="/" element={<News/>} />
+#  <Route path="/" element={<ContactUs/>} />
+#  <Route exact path="/" element={<Home/>} />
+#  </Routes>
+#  </BrowserRouter>
+# // import React from "react";
+# // import { Stepper } from "@mui/material";
+# // import { Step } from "@mui/material";
+# // import { StepLabel } from "@mui/material";
+# // import { Button } from "@mui/material";
+
+# // function Home() {
+# //   const[activeStep, setactiveStep] = React.useState(0);
+
+# //   const nextStep = () => {
+# //     if( activeStep < 2)
+# //     setactiveStep((currentStep) => currentStep + 1 )
+# //   }
+# //   const previousStep = () => {
+# //     if( activeStep !== -1)
+# //     setactiveStep((currentStep) => currentStep - 1 )
+# //   }
+
+# //   return (
+# //     <div>
+# //       <Stepper orientation="vertical" activeStep={activeStep}>
+# //         <Step>
+# //           <StepLabel>First</StepLabel>
+# //         </Step>
+# //         <Step>
+# //           <StepLabel>Second</StepLabel>
+# //         </Step>
+# //         <Step>
+# //           <StepLabel>Third</StepLabel>
+# //         </Step>
+# //       </Stepper>
+# //       <br />
+# //       <br />
+# //       <Button  variant="outlined" color="primary" onClick={() => nextStep()} >
+       
+# //         Next Step
+# //       </Button>
+# //       <br />
+# //       <br />
+# //       <Button  variant="outlined" color="primary" onClick={() => previousStep()} >
+       
+# //         previous Step
+# //       </Button>
+# //     </div>
+# //   );
+# // }
+# // export default Home;
+  
+
+
+# // import { DataGrid } from '@mui/x-data-grid';
+
+# // const columns = [
+# //   { field: 'id', headerName: 'ID', },
+# //   { field: 'mobilephone', headerName: 'Phone Name',  },
+# //   { field: 'phoneprice', headerName: 'Phone Price',  },
+# //   { field: 'country', headerName: 'Origin Country',  },
+# // ];
+
+# // const rows = [
+# //   { id: 1,country: 'china'  ,mobilephone: 'Oppo' ,phoneprice:19000, },
+# //   { id: 2,country: 'india'  ,mobilephone: 'Iphone' , phoneprice:210000, },
+# //   { id: 3,country:  'USA' ,mobilephone:'Vivo' , phoneprice: 20000, },
+# //   { id: 4,country: 'Pakistan'  ,mobilephone: 'Samsung' , phoneprice:15000, },
+# //   { id: 5,country: 'korea'  ,mobilephone: 'Realme', phoneprice:8000,  },
+# //   { id: 6,country: 'America' ,mobilephone:  'Blackbeery' , phoneprice:45000,  },
+# //   { id: 7,country: 'bangladesh'  ,mobilephone: 'Nokia', phoneprice:51000, },
+# //   { id: 8,country:  'Qatar' ,mobilephone:  'Gionne' , phoneprice:55000, },
+# //   { id: 9,country: 'Dubai'  ,mobilephone: 'Oneplus' , phoneprice:98000, },
+# //   { id: 10,country:  'america' ,mobilephone: 'Oppo' , phoneprice:19000, },
+# //   { id: 11,country: 'delhi'  ,mobilephone: 'Iphone' , phoneprice:210000, },
+# //   { id: 12,country: 'munbai'  ,mobilephone:'Vivo' , phoneprice: 20000, },
+# //   { id: 13,country: 'bhopal'  ,mobilephone: 'Samsung' , phoneprice:15000, },
+# //   { id: 14,country:  'jaipur' ,mobilephone: 'Realme', phoneprice:8000,  },
+# //   { id: 15,country: 'banglore'  ,mobilephone:  'Blackbeery' , phoneprice:45000,  },
+# //   { id: 16,country:  'patna' ,mobilephone: 'Nokia', phoneprice:51000, },
+# //   { id: 17,country:  'gaya' ,mobilephone: 'Gionne' , phoneprice:55000, },
+# //   { id: 18,country: 'dewas'  ,mobilephone: 'Oneplus' , phoneprice:98000, },
+# //   { id: 19,country: 'ujjain'  ,mobilephone: 'Oppo' ,phoneprice:19000, },
+# //   { id: 20,country: 'south'  ,mobilephone: 'Iphone' , phoneprice:210000, },
+# //   { id: 21,country: 'ganga'  ,mobilephone:'Vivo' , phoneprice: 20000, },
+# //   { id: 22,country:  'yamuna' ,mobilephone: 'Samsung' , phoneprice:15000, },
+# //   { id: 23,country:  'bekar' ,mobilephone: 'Realme', phoneprice:8000,  },
+# //   { id: 24,country:  'strong' ,mobilephone:  'Blackbeery' , phoneprice:45000,  },
+# //   { id: 25,country:  'bad' ,mobilephone: 'Nokia', phoneprice:51000, },
+# //   { id: 26,country: 'good' ,mobilephone: 'Gionne' , phoneprice:55000, },
+# //   { id: 27,country:  'Ravi' ,mobilephone: 'Oneplus' , phoneprice:98000, },];
+
+# // export default function Home() {
+# //   return (
+# //     <div style={{ height: 500, width: '100%' }}>
+# //       <DataGrid
+# //         rows={rows}
+# //         columns={columns}
+# //         pageSize={6}
+# //            />
+# //     </div>
+# //   );
+# // }
+
+# // import { Drawer, Box, Typography, IconButton, FormControl, InputLabel, Select, MenuItem } from '@mui/material'
+# // import React, { useState } from 'react'
+# // import MenuIcon from '@mui/icons-material/Menu'
+
+# //  const Home = () => {
+# //   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
+# //   // const [phoneRange, setPhoneRange] = useState('')
+
+# // return (
+# //   <div>
+# //  <IconButton
+# //         onClick={() => setIsDrawerOpen(true)}
+# //         size='large'
+# //        >
+# //         <MenuIcon />
+# //       </IconButton>
+# //       <Drawer
+
+# //         open={isDrawerOpen}
+# //         onClose={() => setIsDrawerOpen(false)}
+# //         >
+# //         <Box p={2} width='250px'  textAlign='center'>
+# //           <Typography variant='h6' component='div'>
+# //             Mobile
+# //           </Typography>
+# //         </Box>
+# //         <Box p={2} width='250px'  textAlign='center'>
+# //           <Typography variant='h6' component='div'>
+# //             Laptop
+# //           </Typography>
+# //         </Box>
+# //         <Box p={2} width='250px'  textAlign='center'>
+# //           <Typography variant='h6' component='div'>
+# //             Television
+# //           </Typography>
+# //         </Box>
+# //         <Box p={2} width='250px' textAlign='center'>
+# //           <Typography variant='h6' component='div'>
+# //             Washing Machine
+# //           </Typography>
+# //         </Box>
+# //       </Drawer>
+
+# //   </div>
+# // )
+# // }
+# // export default Home;
+
+# .text{
+#     /* position: fixed;
+#   display: block;
+#   background-image: url('https://i.imgur.com/lL6tQfy.png');
+#   width: 1600px;
+#   height: 800px; */
+#   position: fixed;
+#   display: block;
+#     top: 0;
+#     right: 0;
+#     bottom: 0;  
+#     left: 0;
+#     width: 100%;
+#     filter: blur(10px);
+#     /* object-fit: cover; */
+#     /* overflow: hidden; */
+#     height:100rem ;
+#     opacity: 0.3;
+# }
+# /* .text1{
+
+# } */
+# body {
+#     margin: 0;
+#     padding: 0;
+# }
+
+#  <div> 
+#     {
+#     orders.map((ko) => {
+#       return(
+#         <div>
+#         {ko.lineItems.elements.map((lop)=>{
+#           return(
+#             <div>
+#           <h3>name: {lop.name}</h3>
+#           <h3>price: {lop.price} </h3>
+#           </div>
+
+#               )
+#       })}
+#       </div>
+#               )
+#                })
+  
+
+# }
+#     </div>
+
+# // import React,{useContext} from "react";
+# // import Grid from "@mui/material/Grid";
+# // import Card from "@mui/material/Card";
+# // // import {BrowserRouter,Link,Route} from 'react-router-domik00trttv'
+# // // import { CardActionArea } from "@mui/material";
+# // import Typography from "@mui/material/Typography";
+# // // import { useParams } from "react-router-dom";
+# // // import Navbar from '@mui/material/Button';
+# // import { CounterContext } from './CounterContext' 
+
+# // const Cart = () => {
+# //     const {updateCart} = useContext(CounterContext);
+# //     console.log("YDVFBHCVDYTVU",updateCart)
+# //   return (<div>
+# //     <Grid
+# //         // container
+# //         display="row"
+# //         justifyContent="center"
+# //         alignItems="center"
+# //         // justifyContent="space-evenly"s
+# //       >
+# //  {
+# //     updateCart?.map((mydata) => {
+# //         return(
+# //             <div
+# //             style={{ height: "50px", width: "501px", paddingBottom: "25px" }}
+# //           >
+# //             <Card
+# //               sx={{
+# //                 // paddingBottom:'20px',
+# //                 border: "2px solid #000",
+# //                 width: "100%",
+# //                 height: "100%",
+# //               }}
+# //             >
+# //               <div style={{ height: "30px", width: "30px" }}>
+# //                 <img
+# //                   src={mydata.thumbnail}
+# //                   style={{ height: "100%", width: "100%" }}
+# //                 ></img> 
+# //               </div>
+# //               <div
+# //                 style={{
+# //                   width: "100%",
+# //                   paddingBottom:'30px',
+# //                   display: "flex",
+# //                   justifyContent: "space-around",
+# //                 }}
+# //               >
+# //                 <div style={{ width: "60%" }}>
+# //                   <Typography sx={{}} variant="h6">
+# //                     {mydata.title}
+# //                   </Typography>
+# //                 </div>
+# //                 <div sx={{ width: "20%" }}>
+# //                   <Typography sx={{}} variant="h6">
+# //                     ${mydata.price}
+# //                   </Typography>
+# //                 </div>
+# //               </div>      
+# //             </Card>
+# //           </div>
+# //         )
+# //     })
+# //  }
+# //  </Grid>
+# //   </div>
+  
+# //   )
+# // };
+
+# // export default Cart;
+
+# import React, { useState, useEffect, useContext } from "react";
+# import Grid from "@mui/material/Grid";
+# import Card from "@mui/material/Card";
+# import Typography from "@mui/material/Typography";
+# import { useParams } from "react-router-dom";
+# // import Navbar from "./Navbar";
+# import { useNavigate } from 'react-router-dom';
+# import { CounterContext } from "./CounterContext";
+
+# const MuiMap = () => {
+#   const navigate = useNavigate()
+#   const { handleAdd } = useContext(CounterContext);
+#   const { params } = useParams();
+#   const [part, setPart] = useState([]);
+#   const [toogle,setToogle] = useState(false)
+
+#   // const fetchDate = () => {
+#   //   fetch(`https://dummyjson.com/products/category/${params}`)
+#   //     .then((response) => {
+#   //       return response.json();
+#   //     })
+#   //     .then((fata) => {
+#   //       setPart(fata);
+#   //     });
+#   // };
+
+#   // useEffect(() => {
+#   //   fetchDate();
+#   // }, []);
+
+#   // const viewdetail = () => {
+#   //     //  navigate('/viewdeetail')
+#   // }
+  
+
+#   return (
+#     <div>
+
+#       <div>
+#         <Typography
+#           variant="h2"
+#           component="div"
+#           sx={{ textAlign: "center", fontSize: "65px", paddingBottom: "18px" }}
+#         >
+#       <u>{params}</u>{" "}
+#         </Typography>
+#       </div>
+#       <Grid
+#         container
+#         display="flex"
+#         justifyContent="space-evenly"
+#       >
+#        {part?.products?.map((kl) => {
+#           return (
+#             <div
+#               style={{ height: "330px", width: "341px", paddingBottom: "25px" }}
+#             >
+#               <Card
+#                 sx={{
+#                   // paddingBottom:'20px',
+#                   border: "2px solid #000",
+#                   width: "100%",
+#                   height: "100%",
+#                 }}
+#               >
+#                 <div style={{ height: "220px", width: "341px" }}>
+#                   <img
+#                     src={kl.thumbnail}
+#                     style={{ height: "100%", width: "100%" }}
+#                   ></img>
+#                 </div>
+#                 <hr />
+#                 <div
+#                   style={{
+#                     width: "100%",
+#                     display: "flex",
+#                     justifyContent: "space-around",
+#                   }}
+#                 >
+#                   <div style={{ width: "80%" }}>
+#                     <Typography sx={{}} variant="h6">
+#                       {kl.title}
+#                     </Typography>
+#                   </div>
+#                   <div sx={{ width: "20%" }}>
+#                     <Typography sx={{}} variant="h6">
+#                       ${kl.price}
+#                     </Typography>
+#                   </div>
+#                 </div>
+#                 <hr />
+#                 <div
+#                   style={{ display: "flex", justifyContent: "space-around" }}
+#                 >
+#                   <div >
+
+#                     <button onClick={() => handleAdd(kl)} >Buy Now</button>
+#                   </div>
+#                   <div>
+#                     <button onClick={() => viewdetail()} > View Details </button>
+#                   </div>
+#                 </div>
+#               </Card>
+#             </div>
+#           );
+#         })}
+#       </Grid>
+#     </div>
+#   );
+# };
+# export default MuiMap;
+
+
+#  <h4 style={{fontSize:'30px'}} >{ar.reduce((total, mydata)=>total+(mydata.price*mydata.quantity),0)}</h4>
